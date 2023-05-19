@@ -10,19 +10,18 @@ Name = input("Enter your name : ") #Nombres
 #Ingrese su nombre
 CourseName = input("enter the name of your course: ") #Nombre del curso
 #Ingrese el nombre de su curso
-DefinitiveNote = int(input("Enter your final grade   : ")) #Nota definitiva
+DefinitiveNote = int(input("Enter your final grade: ")) #Nota definitiva
 #Ingrese su nota final
 NameOfClasses = int(input("Enter the total number of classes in the semester  : ")) #Numero de clases
 #Ingrese el numero total de clases en el semestre
 NamOfFailures = int(input("Enter the total number of failures : ")) #Numero de fallas
 #Ingrese el numero total de fallas 
 Note = NameOfClasses * 0.3
-Data(Name,CourseName,DefinitiveNote,NameOfClasses, NamOfFailures)
 
-if NamOfFailures <= Note:
+if NamOfFailures >= Note:
     print(f"\nyour current semester information is:  \nName: {Name}\nCourse name: {CourseName}\nDefinitive note: {DefinitiveNote}\nNumber of classes: {NameOfClasses}\nNumber of failures: {NamOfFailures}")
 
 else:
-    Note = 0
+    DefinitiveNote = 0
     print(f"\nyour current semester information is:  \nName: {Name}\nCourse name: {CourseName}\nDefinitive note: {DefinitiveNote}\nNumber of classes: {NameOfClasses}\nNumber of failures: {NamOfFailures}")
  
