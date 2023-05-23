@@ -3,7 +3,7 @@
 #caso de que las fallas superen el 30% del número de clases se debe mostrar
 #la nota que no aprobó y se calificara cero(0)
 
-def Data(Name, CourseName, DefinitiveNote, NamOfClasses , NamOfFailures): 
+def Data(name, courseName, definitiveNote, namOfClasses , namOfFailures): 
     """ print(f"\n\nLos Datos del Formulario enviado son:\nName: {Name}\nCourse Name: {CourseName}\nDefinitive note: {DefinitiveNote}\nNumber of classes: {NameOfClasses}\nNumber of failures: {NamOfFailures}")  """
 
 name = input("Enter your name : ") #Nombres
