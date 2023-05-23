@@ -6,22 +6,21 @@
 def Data(Name, CourseName, DefinitiveNote, NamOfClasses , NamOfFailures): 
     """ print(f"\n\nLos Datos del Formulario enviado son:\nName: {Name}\nCourse Name: {CourseName}\nDefinitive note: {DefinitiveNote}\nNumber of classes: {NameOfClasses}\nNumber of failures: {NamOfFailures}")  """
 
-Name = input("Enter your name : ") #Nombres
+name = input("Enter your name : ") #Nombres
 #Ingrese su nombre
-CourseName = input("enter the name of your course: ") #Nombre del curso
+courseName = input("enter the name of your course: ") #Nombre del curso
 #Ingrese el nombre de su curso
-DefinitiveNote = int(input("Enter your final grade: ")) #Nota definitiva
+definitiveNote = int(input("Enter your final grade: ")) #Nota definitiva
 #Ingrese su nota final
-NameOfClasses = int(input("Enter the total number of classes in the semester  : ")) #Numero de clases
+nameOfClasses = int(input("Enter the total number of classes in the semester  : ")) #Numero de clases
 #Ingrese el numero total de clases en el semestre
-NamOfFailures = int(input("Enter the total number of failures : ")) #Numero de fallas
+namOfFailures = int(input("Enter the total number of failures : ")) #Numero de fallas
 #Ingrese el numero total de fallas 
-Note = NameOfClasses * 0.3
-
-if NamOfFailures >= Note:
-    print(f"\nyour current semester information is:  \nName: {Name}\nCourse name: {CourseName}\nDefinitive note: {DefinitiveNote}\nNumber of classes: {NameOfClasses}\nNumber of failures: {NamOfFailures}")
-
-else:
-    DefinitiveNote = 0
-    print(f"\nyour current semester information is:  \nName: {Name}\nCourse name: {CourseName}\nDefinitive note: {DefinitiveNote}\nNumber of classes: {NameOfClasses}\nNumber of failures: {NamOfFailures}")
+note = nameOfClasses * 0.3
  
+if namOfFailures <= note:
+    print(f"\n\nInformacion Semestre: \nName: {name}\nCourse Name: {courseName}\nFinal Note: {note}\nN° Classes: {nameOfClasses}\nN° Fails: {namOfFailures}")
+    
+else:
+    note = 0
+    print(f"\n\nInformacion Semestre: \nName: {name}\nCourse: {courseName}\nFinal Note: {note}\nN° Classes: {nameOfClasses}\nN° Fails: {namOfFailures}")
